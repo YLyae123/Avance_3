@@ -1,0 +1,131 @@
+/* Hero section typography */
+.hero-content h1 {
+    font-size: 4rem; /* Increase the font size */
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero-content h1 .highlight {
+    color: #e67300; /* Orange color for emphasis */
+    position: relative;
+}
+
+.hero-content h1 .highlight::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: #ff6347; /* Use a brighter color for the underline */
+    bottom: -10px;
+    left: 0;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 20px;
+    max-width: 600px;
+}
+/* Button Styles */
+.btn-primary {
+    background-color: #ffcc33; /* Bright yellow color */
+    color: #333;
+    padding: 12px 25px;
+    border-radius: 30px; /* Rounded corners */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    padding: 12px 25px;
+    border: 2px solid #ff6347;
+    border-radius: 30px; /* Rounded corners for consistency */
+    color: #ff6347;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* Hero section layout */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px; /* Adjust padding for a better layout */
+    background-color: #fef4e4; /* Light cream background */
+}
+
+.hero-content {
+    max-width: 50%; /* Limit the width of the text section */
+}
+
+.hero-image img {
+    max-width: 450px; /* Adjust image size */
+    height: auto;
+}
+body {
+    background-color: #faf7f0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.container {
+    padding: 0 15px; /* Adjust spacing */
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+/* Asegúrate de que la barra de navegación esté centrada y bien distribuida */
+.navbar-nav {
+    flex-direction: row; /* Hace que los ítems estén alineados horizontalmente */
+    justify-content: center; /* Asegura que los elementos se centren horizontalmente */
+}
+
+.nav-link{
+    color: white;
+}
+nav{
+    background-color: rgb(31, 31, 31);
+    height: 60px;
+}
+.nav-link:hover{
+    color: rgb(202, 214, 26);
+}
+
+.nav-item {
+    padding: 0 15px; /* Ajusta el espaciado horizontal entre los ítems */
+}
+
+.navbar-brand {
+    font-size: 1.7rem; /* Aumenta un poco el tamaño del logo */
+    font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Ajustes para que la barra esté fija arriba */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #333; /* Asegúrate de que el color esté definido si no estás usando clases de Bootstrap */
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); /* Añade sombra para efecto flotante */
+}
+
+/* Ajusta el diseño en pantallas pequeñas */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        justify-content: center;
+    }
+}
